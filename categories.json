@@ -28,5 +28,11 @@
     "display_name": "Utilities",
     "singular": "utility",
     "plural": "utilities"
+  },
+    {
+    "name": "homebrew",
+    "display_name": "Homebrew",
+    "singular": "homebrew",
+    "plural": "homebrews"
   }
 ]
