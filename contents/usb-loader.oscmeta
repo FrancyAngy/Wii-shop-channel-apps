@@ -1,0 +1,48 @@
+{
+    "information": {
+        "name": "Configurable USB Loader",
+        "author": "oggzee",
+        "authors": [
+            "usptactical",
+            "gannon",
+            "Clipper"
+        ],
+        "category": "utilities",
+        "supported_platforms": [
+            "wii",
+            "vwii",
+            "wii_mini"
+        ],
+        "peripherals": [
+            "Wii Remote",
+            "Wii Remote",
+            "Wii Remote",
+            "Wii Remote",
+            "Nunchuk",
+            "Classic Controller",
+            "GameCube Controller",
+            "SDHC"
+        ],
+        "version": "70 Mod r78.12"
+    },
+    "source": {
+        "type": "url",
+        "format": "zip",
+        "location": "https://hbbarchive.oscwii.org/Cfg_USB_Loader_70_Mod_r78.11.zip",
+        "comment": "Obtained from ModMii\u0027s GitHub repo @ https://github.com/modmii/modmii.github.io"
+    },
+    "treatments": [
+        {
+            "treatment": "contents.move",
+            "arguments": ["apps/usbloader_cfg/", "apps/usb-loader/"]
+        },
+        {
+            "treatment": "web.download",
+            "arguments": ["http://cfgusbloader.ntd.homelinux.org/binaries/sd/meta.xml", "apps/usb-loader/meta.xml"]
+        },
+        {
+            "treatment": "web.download",
+            "arguments": ["http://cfgusbloader.ntd.homelinux.org/binaries/dol/r12/cfg70r78.12.dol", "apps/usb-loader/boot.dol"]
+        }
+    ]
+}
